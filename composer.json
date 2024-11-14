@@ -2,7 +2,7 @@
   "name": "xrobau/laravel-sql-storage",
   "description": "Use MySQL as a filesystem.",
   "type": "library",
-  "license": "AGPLv3",
+  "license": "AGPL-3.0-or-later",
   "authors": [
     {
       "name": "Rob Thomas",
