@@ -1,0 +1,26 @@
+{
+  "name": "xrobau/laravel-sql-storage",
+  "description": "Use MySQL as a filesystem.",
+  "type": "library",
+  "license": "AGPLv3",
+  "authors": [
+    {
+      "name": "Rob Thomas",
+      "email": "xrobau@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "xrobau\\LaravelSqlStorage\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "xrobau\\LaravelSqlStorage\\Laravel\\SqlServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
