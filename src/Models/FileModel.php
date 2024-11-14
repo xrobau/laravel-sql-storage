@@ -67,6 +67,7 @@ class FileModel extends Model
             if ($current->$a !== $v) {
                 // print "Mismatch $a should be $v but is " . $current->$a . "\n";
                 $changed = true;
+                $current->$a = $v;
             }
         }
         if ($changed) {
@@ -76,6 +77,11 @@ class FileModel extends Model
         return $current;
     }
 
+    /**
+     * This overrides the get for 'contents', which is a collection
+     * of FileBlobModels. Anything else is passed up to the parent
+     * model.
+     */
     public function __get($key)
     {
         if ($key == 'contents') {
